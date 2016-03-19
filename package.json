@@ -4,7 +4,7 @@
   "description": "simple pixel-based sketchpad using angular",
   "main": "index.js",
   "scripts": {
-      "start": "node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,7 +12,11 @@
     "sketchpad"
   ],
   "author": "Thorsten Reichert",
-  "license": "ISC",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/Uninspiriert/angular-sketchpad.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "express": "^4.13.4",
     "jade": "^1.11.0"

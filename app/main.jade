@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+
+        title Angular Sketchpad
+
+        include ./jade/lib/bootstrap.jade
+        include ./jade/lib/angular.jade
+
+        link(href="public/css/style.css" rel="stylesheet")
+
+    body(ng-app="sketchpad" ng-strict-di)
+        .container-fluid
+            .row.sp-header
+                include ./jade/header.jade
+            .row.sp-body
+                .col-md-6
+                    sp-settings-panel
+                .col-md-6
+                    table(style="margin: 0 auto; border-collapse: separate;")
+                        tr
+                            td.sp-frame
+                                sp-canvas(width="500" height="500" resolution-x="10" resolution-y="10")

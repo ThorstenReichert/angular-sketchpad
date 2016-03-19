@@ -1,0 +1,7 @@
+<div style="height:{{vm.sizeY}}px;width:{{vm.sizeX}}px; box-sizing:content-box; border: 2px solid black;">
+    <div ng-repeat="y in vm.pixelsY track by $index" style="clear:left">
+        <div ng-repeat="x in vm.pixelsX track by $index">
+            <sp-pixel width="vm.pixelWidth" height="vm.pixelHeight" style="float:left;"></sp-pixel>
+        </div>
+    </div>
+</div>
